@@ -1,0 +1,28 @@
+
+
+
+<div class="card" style="width: 50rem; height: auto;">
+<img src="<%= @article.image %>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= @article.title %></h5>
+    <p class="card-text"><%= @article.text %></p>
+  </div>
+</div>
+
+<% @article.comments.each do |comment| %>
+  <div class="card" style="width: 50rem;">
+  <div class="card-body">
+  <h5 class="card-title"><%= comment.name %></h5>
+  <p class="card-text"><%= comment.body %></p>
+    
+            </div>
+            </div>
+<% end %>
+
+
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+ 
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

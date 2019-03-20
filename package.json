@@ -1,0 +1,7 @@
+{
+  "name": "blog",
+  "private": true,
+  "dependencies": {
+    "interactjs": "^1.4.0-beta.4"
+  }
+}

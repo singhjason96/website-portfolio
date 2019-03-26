@@ -10,12 +10,16 @@ class ArticlesController < ApplicationController
 
     def new
         @article = Article.new
+        @user = User.find(params[:id])
     end
 
     def create
         @article = Article.new(article_params)
-       if @article.save
-        redirect_to @article
+        @user_id = params[:article_id]
+        @user_id.article_id = params[:user_id]
+       if @article.valid
+          @article.save
+        redirect_to "/users/#{@user_id}/articles/#{@article_id}"
        else render 'new'
        end
     end

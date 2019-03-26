@@ -5,7 +5,7 @@ header{
     position: relative;
     width: 100%;
     height: 60px;
-    background-color:#00b33c;
+    background-color:#f9bf3b;
 }
 
 #header-container {
@@ -14,7 +14,24 @@ header{
     height: 60px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #00b33c;
+    background-color: #f9bf3b;
+}
+
+
+.icon-linkedin {
+    background-image: url("http://www.logosvectorfree.com/wp-content/uploads/2018/01/LinkedIn-logo-vector-png-icons-download.png");
+}
+
+.icon {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
 }
 
 div {
@@ -28,14 +45,154 @@ div {
 
 .name {
     position: relative;
-    ffont-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #fff;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-#icons-container {
+
+#portfolio-1{
+    background-color: #00bff3;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+}
+
+.portfolio-container {
     position: relative;
-    top: 8px;
-    float: right;
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio-container-1 {
+    background-image: url('coding.png');
+    background-repeat: no-repeat;
+    
+}
+
+.text-container {
+    position: absolute;
+    width: 360px;
+    top: 65%;
+    transform: translateY(-50%);
+    margin-left: 60%;
+    
+}
+
+.text-tilte {
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+    font-size: 70px;
+    line-height: 56px;
+    margin-bottom: 18px;
+
+}
+
+.text-body {
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff !important;
+}
+
+.text-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ffff;
+    font-family: arial;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-container-left {
+    left: 0px;
+}
+
+#portfolio-2 {
+    background-color: #00b33c;
+    background-image: url("http://www.medgreeneconomy.org/assets/img/headGraphic.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.portfolio {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+#portfolio-container-2 {
+   
+}
+
+.text-container-right {
+    margin-left: 10%;
+}
+
+#portfolio-3 {
+    background-color: #ef3538;
+    background-image: url("gallery1.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#portfolio-container-3 {
+   
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #f9bf3b;
+}
+
+#footer-container {
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    background-color: #f9bf3b;
+
+}
+
+.footer-column {
+    position: relative;
+    width: 360px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.title {
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text {
+    position: relative;
+    font-family: arial;
+    font-size: 14px;
+    color: #ffffff;
+    line-height:20px;
+    margin-bottom: 10px;
+
+}
+
+.footer-column-last {
+    margin-right: 0px;
 }

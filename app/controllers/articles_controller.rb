@@ -1,4 +1,7 @@
 class ArticlesController < ApplicationController
+    http_basic_authenticate_with name: "Jason", password: "whitebitchesaretrash", except: [:index, :show]
+ 
+
     def index
         @articles = Article.all.order("created_at DESC")
     end
@@ -10,16 +13,13 @@ class ArticlesController < ApplicationController
 
     def new
         @article = Article.new
-        @user = User.find(params[:id])
     end
 
     def create
         @article = Article.new(article_params)
-        @user_id = params[:article_id]
-        @user_id.article_id = params[:user_id]
-       if @article.valid
+       if @article.valid?
           @article.save
-        redirect_to "/users/#{@user_id}/articles/#{@article_id}"
+        redirect_to "/articles/#{@article_id}"
        else render 'new'
        end
     end

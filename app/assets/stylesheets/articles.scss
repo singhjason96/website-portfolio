@@ -1,15 +1,161 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.card{
-  margin: 0 auto;
-  float: none;
+body {
+  margin: 0;
 }
 
-.link{
-  text-align: center;
+header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #01a36a;
+}
+#header-container {
+  position: relative;
+  width: 1200px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#01a36a;
 }
 
-.title{
-  text-align: center;
+img {
+  width: 500px;
+}
+
+.text-title {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
+
+}
+
+.text-body {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+
+}
+
+.card {
+  width: 500px;
+  height: auto;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-weight: 800;
+  letter-spacing: -.05;
+}
+
+.side-view {
+  padding-left: 2%;
+  margin-top: 1em;
+  margin-bottom: 0;
+  float: left;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 2%;
+  border-bottom: solid black;
+}
+
+.flex-grid > .column {
+  flex-grow: 1;
+  flex: 1 1 30%;
+  justify-content: center;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
+}
+
+.card-text {
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+#title {
+  top: 12px;
+  float: left;
+}
+
+.title {
+  position: relative;
+  font-family: miso-bold;
+  color: #ffffff;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.row-img {
+  width: 200px;
+}
+
+.flex-grid > .row {
+  flex-grow: 1;
+  flex: 1 1 30%;
+  justify-content: center;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+.articles {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.articleShort {
+  display: flex;
+  flex: 1 1 0%;
+}
+
+.articleMain {
+  display: flex;
+  flex: 1 1 100%;
+  margin-left: 5%;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 15px;
+
+    .card-content{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      align-self: stretch;
+      flex: 1 1 auto;
+      h3,p {
+        max-width: calc(100% - 30px);
+        padding-left: 30px;
+      }
+    }
+    .card-img-row {
+      width: 200px;
+    }
+   
 }

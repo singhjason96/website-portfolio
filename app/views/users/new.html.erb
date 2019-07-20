@@ -1,0 +1,24 @@
+<%= form_for @user, url: {action: "create"}, html: {class: "userform"} do |f| %>
+
+    <div class="username">
+    <%= f.label :username%><br>
+  <%= f.text_field :username %>
+  </div>
+
+  
+  <div class="password">
+  <%=f.label :password%><br>
+  <%= f.password_field :password %>
+  </div>
+
+  <div class="confirmpassword">
+  <%=f.label :password_confirmation%><br>
+  <%= f.password_field :password_confirmation %>
+  </div>
+
+
+<div class="button">
+  <%= f.submit "Join" %>
+  </div>
+<% end %>
+</div>

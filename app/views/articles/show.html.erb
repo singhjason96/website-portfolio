@@ -1,7 +1,4 @@
-
-
-
-<div class="card" style="width: 50rem; height: auto;">
+<div class="card">
 <img src="<%= @article.image %>" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title"><%= @article.title %></h5>
@@ -9,14 +6,15 @@
   </div>
 </div>
 
-<% @article.comments.each do |comment| %>
-  <div class="card" style="width: 50rem;">
+<% if @article.comments.each do |comment| %>
+  <div class="card">
   <div class="card-body">
   <h5 class="card-title"><%= comment.name %></h5>
   <p class="card-text"><%= comment.body %></p>
     
             </div>
             </div>
+<% end %>
 <% end %>
 
 
